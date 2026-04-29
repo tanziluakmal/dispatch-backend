@@ -1,0 +1,5 @@
+*.exe
+*.dll
+.idea/
+.vscode/
+*.log

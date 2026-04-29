@@ -1,0 +1,5 @@
+# Build context excludes
+*.md
+.git
+*.test
+*_test.go
