@@ -73,6 +73,8 @@ func main() {
 	api.POST("/import/postman", srv.ImportPostman)
 	api.POST("/import/openapi", srv.ImportOpenAPI)
 
+	api.POST("/proxy", srv.ProxyRequest)
+
 	addr := cfg.HTTPAddr
 	if strings.TrimSpace(os.Getenv("PORT")) != "" && addr == ":8080" {
 		addr = ":" + strings.TrimSpace(os.Getenv("PORT"))
